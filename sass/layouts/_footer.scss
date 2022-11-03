@@ -1,0 +1,23 @@
+.footer__logo-secondpart {
+  color: var(--light-text-color);
+}
+
+.footer {
+  position: relative;
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-section:first-child {
+  margin-right: 70px;
+}

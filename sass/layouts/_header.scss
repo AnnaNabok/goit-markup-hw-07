@@ -1,0 +1,113 @@
+.page-header {
+  background-color: var(--light-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin: 0;
+}
+
+.site-nav__unit:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
+  position: relative;
+  color: var(--dark-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.site-nav__link--current {
+  color: var(--accent-color);
+}
+
+.site-nav__link--current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  content: "";
+  border-radius: 2px;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  opacity: 1;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.auth-nav__link:hover,
+.auth-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav__link,
+.auth-nav__link,
+.auth-nav__link {
+  transition: color 250ms var(--transition-timing-function);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav__item + .auth-nav__item {
+  margin-left: 50px;
+}
+/* ------------------------icons----------------- */
+.auth-nav__icon {
+  fill: var(--medium-text-color);
+  margin-right: 10px;
+}
+
+.auth-nav__item {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav__link:hover,
+.auth-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav__link:hover .auth-nav__icon,
+.auth-nav__link:focus .auth-nav__icon {
+  fill: var(--accent-color);
+}
+
+.auth-nav__link .auth-nav__icon {
+  transition: fill 250ms var(--transition-timing-function);
+}

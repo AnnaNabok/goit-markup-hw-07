@@ -1,0 +1,62 @@
+.hero {
+  color: var(--light-text-color);
+  text-align: center;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background-image.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+  max-width: 696px;
+}
+
+.hero-button,
+.subscribe-button {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  min-width: 216px;
+  text-align: center;
+
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function);
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
