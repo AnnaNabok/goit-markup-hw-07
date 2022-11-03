@@ -21,8 +21,8 @@
 }
 .portfolio-button:hover,
 .portfolio-button:focus,
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-product:hover,
+.portfolio-product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -91,8 +91,8 @@
   transition: transform 250ms var(--transition-timing-function);
 }
 
-.portfolio-product__link:hover .portfolio-product__overlay,
-.portfolio-product__link:hover .portfolio-product__overlay {
+.portfolio-product:hover .portfolio-product__overlay,
+.portfolio-product:hover .portfolio-product__overlay {
   transform: translateY(0);
 }
 
