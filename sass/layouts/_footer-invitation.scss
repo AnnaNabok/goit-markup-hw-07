@@ -30,9 +30,8 @@
   fill: var(--light-text-color);
   transition: background-color 250ms var(--transition-timing-function),
     fill 250ms var(--transition-timing-function);
-}
-
-.footer-invitation__soc-link:hover,
-.footer-invitation__soc-link:hover {
-  background-color: var(--accent-color);
+  &:hover,
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }

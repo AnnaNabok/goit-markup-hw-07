@@ -11,23 +11,21 @@
 
 .advantages-list__item {
   flex-basis: calc((100% - 90px) / 4);
-}
-
-.advantages-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  background-position: center;
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    background-position: center;
+  }
 }
 
 .icon-details::before {
   background-image: url(../images/antena.svg);
 }
-
 .icon-punktuality::before {
   background-image: url(../images/clock.svg);
 }

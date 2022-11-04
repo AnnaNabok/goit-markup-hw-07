@@ -45,19 +45,17 @@
   justify-content: center;
   background-color: var(--light-text-color);
   transition: background-color 250ms var(--transition-timing-function);
-}
-
-.soc-list__link:hover,
-.soc-list__link:focus {
-  background-color: var(--accent-color);
-}
-
-.soc-list__link:hover .soc-list__icon,
-.soc-list__link:focus .soc-list__icon {
-  fill: var(--light-text-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .soc-list__icon {
   fill: var(--primary-icon-color);
   transition: fill 250ms var(--transition-timing-function);
+  .soc-list__link:hover &,
+  .soc-list__link:focus & {
+    fill: var(--light-text-color);
+  }
 }
