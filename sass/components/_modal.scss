@@ -70,7 +70,6 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: $dark-text-color;
 }
 
@@ -114,7 +113,7 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  fill: var(--dark-text-color);
+  fill: $dark-text-color;
   transition: fill 250ms $transition-timing-function;
   .input-wrap:hover & {
     fill: $accent-color;
@@ -179,7 +178,7 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--dark-text-color);
+  border: 2px solid $dark-text-color;
   border-radius: 2px;
   margin-right: 8px;
   .checkbox-input:checked + & {
@@ -206,7 +205,6 @@
 /* ---------------------button-submit--------------------- */
 .button-submit {
   margin: 0 auto;
-  display: block;
   padding: 10px 20px;
   min-width: 200px;
   height: 50px;
@@ -215,8 +213,7 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex(flex);
   border: none;
   border-radius: 4px;
   color: $light-text-color;

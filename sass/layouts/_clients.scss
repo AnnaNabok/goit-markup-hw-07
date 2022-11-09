@@ -9,21 +9,17 @@
 }
 
 .client {
-  display: flex;
+  @include centeredFlex(flex);
   width: calc((100% - 150px) / 6);
   height: 92px;
-  align-items: center;
-  justify-content: center;
 }
 
 .client__link {
-  display: flex;
+  @include centeredFlex(flex);
   width: 100%;
   height: 100%;
   border: 1px solid $primary-icon-color;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   transition: border 250ms $transition-timing-function;
   &:hover,
   &:focus {

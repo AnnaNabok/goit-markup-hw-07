@@ -10,9 +10,7 @@
   border: none;
   min-width: 216px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex(flex);
   gap: 10px;
   padding: 10px;
 

@@ -608,20 +608,20 @@ body {
 
 .client {
   display: flex;
-  width: calc((100% - 150px) / 6);
-  height: 92px;
   align-items: center;
   justify-content: center;
+  width: calc((100% - 150px) / 6);
+  height: 92px;
 }
 
 .client__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__link:hover, .client__link:focus {
@@ -991,7 +991,7 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  fill: var(--dark-text-color);
+  fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wrap:hover .modal-input-icon {
@@ -1055,7 +1055,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--dark-text-color);
+  border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 8px;
 }
@@ -1083,7 +1083,6 @@ body {
 /* ---------------------button-submit--------------------- */
 .button-submit {
   margin: 0 auto;
-  display: block;
   padding: 10px 20px;
   min-width: 200px;
   height: 50px;
@@ -1092,6 +1091,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: none;
@@ -1144,7 +1144,7 @@ body {
   border: none;
   min-width: 216px;
   text-align: center;
-  transition: color 250ms var(--transition-timing-function), background-color 250ms var(--transition-timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover, .hero-button:focus {
   background-color: #188ce8;
@@ -1186,7 +1186,7 @@ body {
   border: 1px solid transparent;
   border-radius: 4px;
   min-width: 73px;
-  transition: box-shadow 250ms var(--transition-timing-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:hover, .portfolio-button:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

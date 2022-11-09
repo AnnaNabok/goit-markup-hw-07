@@ -28,18 +28,14 @@
 }
 
 .soc-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredFlex(flex);
   margin-top: 16px;
   gap: 10px;
   &__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex(flex);
     background-color: $light-text-color;
     transition: background-color 250ms $transition-timing-function;
     &:hover,
