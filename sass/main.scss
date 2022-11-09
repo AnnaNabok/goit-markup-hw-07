@@ -1,4 +1,5 @@
-@import "./utils/vars";
+@import "./utils/variables";
+@import "./base/normalize";
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/hidden";
@@ -8,7 +9,7 @@
 @import "./layouts/portfolio-main";
 @import "./layouts/team";
 @import "./layouts/clients";
-@import "./layouts/portfolio.scss";
+@import "./layouts/portfolio";
 @import "./layouts/footer";
 @import "./layouts/footer-address";
 @import "./layouts/footer-invitation";

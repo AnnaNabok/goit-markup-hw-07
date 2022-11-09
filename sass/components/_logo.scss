@@ -7,7 +7,7 @@
 }
 
 .logo-firstpart {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo-secondpart {
@@ -15,5 +15,5 @@
 }
 
 .footer__logo-secondpart {
-  color: var(--light-text-color);
+  color: $light-text-color;
 }

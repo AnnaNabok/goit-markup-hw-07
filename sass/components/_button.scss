@@ -1,30 +1,30 @@
 .button {
-  color: var(--dark-text-color);
-  background-color: var(--light-background-color);
+  color: $dark-text-color;
+  background-color: $light-background-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  transition: color 250ms var(--transition-timing-function),
-    background-color 250ms var(--transition-timing-function);
+  transition: color 250ms $transition-timing-function,
+    background-color 250ms $transition-timing-function;
 }
 
 .button.primary {
-  color: var(--light-text-color);
-  background-color: var(--accent-color);
+  color: $light-text-color;
+  background-color: $accent-color;
 }
 
 .button.secondary {
-  color: var(--dark-text-color);
+  color: $dark-text-color;
   background-color: #f5f4fa;
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
-  color: var(--light-text-color);
-  background-color: var(--accent-color);
+  color: $light-text-color;
+  background-color: $accent-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;

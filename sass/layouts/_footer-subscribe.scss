@@ -5,7 +5,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--light-text-color);
+  color: $light-text-color;
   margin-bottom: 20px;
 }
 
@@ -23,7 +23,7 @@
   border-radius: 4px;
   font-size: 16px;
   padding: 15px 16px;
-  color: var(--light-text-color);
+  color: $light-text-color;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: transparent;
