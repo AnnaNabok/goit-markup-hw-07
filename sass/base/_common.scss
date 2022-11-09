@@ -12,26 +12,18 @@ html {
   cursor: pointer;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 94px 0;
-}
-
 body {
-  background-color: var(--light-text-color);
-  color: var(--medium-text-color);
-  font-family: var(--main-font);
+  background-color: $light-text-color;
+  color: $medium-text-color;
+  font-family: $main-font;
   letter-spacing: 0.03em;
   margin: 0;
 }
 
-.link {
-  text-decoration: none;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section__title {
@@ -41,7 +33,7 @@ body {
 }
 
 .title {
-  color: var(--dark-text-color);
+  color: $dark-text-color;
   margin-bottom: 50px;
   text-align: center;
 }

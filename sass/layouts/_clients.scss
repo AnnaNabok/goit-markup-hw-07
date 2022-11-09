@@ -1,3 +1,7 @@
+.clients {
+  @extend %section;
+}
+
 .clients-list {
   display: flex;
   gap: 30px;

@@ -1,4 +1,5 @@
 .team {
+  @extend %section;
   line-height: 1.19;
   background-color: #f5f4fa;
 }
